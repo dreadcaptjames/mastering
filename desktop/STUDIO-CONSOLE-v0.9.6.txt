@@ -1,0 +1,5 @@
+MasterForge AI Studio Console v0.9.6
+Complete Python desktop source package.
+Run Windows: RUN-MASTERFORGE-WINDOWS.bat
+Run CachyOS: RUN-MASTERFORGE-CACHYOS.sh
+Visual redesign only; core mastering engine and launcher/build scripts unchanged.

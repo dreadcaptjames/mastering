@@ -1,0 +1,30 @@
+# Python / local builds
+__pycache__/
+*.py[cod]
+.venv/
+.build-venv/
+venv/
+build/
+dist/
+*.spec
+.pytest_cache/
+.mypy_cache/
+*.log
+
+# Large user tracks and temporary masters
+*.wav
+*.mp3
+*.m4a
+*.flac
+*.aiff
+*.aif
+*.ogg
+*.opus
+*.part
+*.tmp
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

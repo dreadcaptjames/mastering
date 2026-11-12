@@ -1,0 +1,17 @@
+MASTERFORGE AI — WINDOWS DESKTOP EDITION
+
+MasterForge AI is a locally running audio mastering application.
+
+- Imported audio is processed on your machine, using a bundled FFmpeg executable.
+- No user account, online service, or cloud upload is necessary for mastering.
+- Source tracks are not overwritten. Exported masters go to your chosen folder.
+- This installer adds a Start menu entry and an uninstall entry in Windows Settings.
+- Default installation: %%LOCALAPPDATA%%\Programs\MasterForge AI
+- Uninstallation removes the installed application but not your exported audio.
+- If you previously used the portable EXE, you can delete its old folder once the installed application works.
+
+This software is an evolving mastering tool. Audio quality depends on the source and processing settings.
+
+Distribution note: executable bundles can include FFmpeg and other third-party libraries; check the exact bundled licenses before distributing commercially.
+
+Signing note: an unsigned Setup EXE may trigger a Windows SmartScreen warning. An Authenticode certificate and reputation are separate from creating a functional installer.
