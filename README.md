@@ -44,9 +44,29 @@ UI tests need a graphical desktop; on a headless Linux runner use `xvfb-run -a p
 
 See [desktop/README.md](desktop/README.md) for complete instructions and [desktop/DYNAMIC-MASTERING.md](desktop/DYNAMIC-MASTERING.md) for the mastering chain and its limitations.
 
-## Legacy web edition
+## Web Studio v1.0 beta — browser-native Dynamic Signature
 
-The repository root still contains the earlier **v0.8.2** browser mastering application (`index.html`, `app.js`, etc.) so an existing GitHub Pages site is not disrupted. That web edition is **not equivalent to** the Python v0.10.1 Dynamic Signature engine. The current development focus is the Python desktop edition.
+The repository root now contains an **upgraded browser-native mastering studio**, hosted as static files on GitHub Pages or any HTTPS static host. The web edition features:
+
+- Full-song, 2-second window analysis of quiet, dense and transient-rich passages
+- Time-varying Signature gain and EQ, adaptive tonal shaping, guarded stereo widening, conditional compression
+- Gated K-weighted integrated loudness **estimates**, bounded peak protection with a 4× intersample-peak **estimate**
+- A/B player, waveform/scrubbing, Natural / Balanced / Impact / Signature, WAV / MP3 / M4A export, six themes × four aesthetics
+- **Save current as default** for personal mastering preferences (new-install default: Signature + Streaming / -14 LUFS)
+- Offline-capable Home Screen web application after service worker caching
+
+Music is processed entirely in the browser in local mode. It is **not** sonically identical to Python/FFmpeg yet; compression, limiting and meter calibration differ. Output formats and long-song capacity depend on the device and browser. See [Web Dynamic Mastering Technical Notes](docs/WEB-DYNAMIC-MASTERING.md).
+
+### Web development test
+
+```bash
+node tests/web-mastering.test.cjs
+```
+
+## Earlier web edition and deployment notes
+
+
+The repository root was updated from v0.8.2 to browser-native Web Studio v1.0 beta. The Python desktop application under `desktop/` remains untouched.
 
 ## Privacy and status
 

@@ -1,8 +1,8 @@
-/* MasterForge AI v0.8.2: app shell only, never cache a user's audio. */
-const CACHE_NAME = 'masterforge-shell-v0.8.2';
+/* MasterForge AI v1.0.0-beta: app shell only, never cache a user's audio. */
+const CACHE_NAME = 'masterforge-shell-v1.0.0-beta';
 const APP_SHELL = [
   './','./index.html',
-  './app.js?v=0.8.2','./theme.js?v=0.8.2','./styles.css?v=0.8.2',
+  './app.js?v=1.0.0-beta','./web-mastering.js?v=1.0.0-beta','./theme.js?v=1.0.0-beta','./styles.css?v=1.0.0-beta',
   './manifest.webmanifest','./assets/icon-192.png',
   './assets/icon-512.png','./assets/apple-touch-icon.png'
 ];

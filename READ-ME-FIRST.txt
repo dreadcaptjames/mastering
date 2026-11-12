@@ -1,11 +1,24 @@
-MASTERFORGE AI v0.8.2 — UNIVERSAL WEB MASTERING STUDIO
+MASTERFORGE AI WEB STUDIO v1.0 BETA — DYNAMIC SIGNATURE
 
-Upload the CONTENTS of this folder (index.html at site root) to a static HTTPS host such as https://app.netlify.com/drop. No GitHub required. Files and mastering stay on the device in Browser Local mode.
+The root files host the browser-native MasterForge studio (GitHub Pages/Netlify).
+The fully local browser DSP now provides whole-song 2-second section analysis,
+dynamic EQ and gain, conditional compression, approximate integrated LUFS metering,
+guarded stereo width, and peak protection. It supports all four styles, six palettes,
+four aesthetics, saved startup settings, waveform scrubbing, A/B and WAV/MP3/M4A exports.
 
-NEW: Signature (Beta) — an experimental tonal mastering character calibrated from two original/master audio comparisons. This is independent DSP, not a guarantee of commercial mastering quality. Browser processing has a fixed finishing EQ curve and approximate loudness; the desktop FFmpeg engine offers fuller source-adaptive EQ, measured LUFS and dynamic guards.
+Signature + Streaming (-14 LUFS) is the default for new users. Choose any settings
+and use Save current as default to remember them in this browser.
 
-WAV, MP3 and M4A/AAC exports are available depending on browser encoder support; initial MP3 export may need an online connection. To install the site as an app, use your browser's Add to Home Screen / Install menu. After initial app-shell caching it can open offline. Very large tracks still depend on device memory.
+Audio processing in Local mode stays on the user's device. It is NOT the same binary
+as the desktop Python/FFmpeg engine, and sonic parity has not been established.
+The browser LUFS / intersample-peak measurements are estimates, not certified meters.
+M4A export depends on native browser support. MP3 may require encoder download.
+Large audio can exhaust device memory; there is no fixed duration limit.
+No AI model is involved: the engine is rule-based adaptive DSP.
 
-No user audio files are included, uploaded or retained by the static host. See the full source README for technical notes and limitations.
+Upload ALL root files (including web-mastering.js, app.js, index.html, theme.js,
+styles.css, sw.js, manifest.webmanifest and assets/) to the static host, then
+reopen the installed web app while online to refresh its service worker cache.
+The complete Python desktop application remains unchanged under desktop/.
 
-UPDATE NOTE v0.8.2: The mastering style is now named Signature throughout the interface. Upload every file, and reopen or reload the app while online to receive the updated branding and cache version.
+Documentation: docs/WEB-DYNAMIC-MASTERING.md

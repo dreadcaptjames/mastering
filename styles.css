@@ -294,3 +294,18 @@ html[data-theme] .finding p{color:var(--muted)}
 
 /* Signature Beta: readable label across theme palettes. */
 .preset-copy em{font-style:normal;font-size:9px;letter-spacing:.06em;opacity:.8;padding:2px 5px;border:1px solid currentColor;border-radius:4px;vertical-align:middle;margin-left:3px}
+
+/* Dynamic Web Studio v1.0 — adapts to all six palettes. */
+.startup-defaults{margin-top:16px;border-top:1px solid var(--stroke);padding-top:13px;display:flex;flex-direction:column;gap:11px}
+.startup-summary{font:600 11px var(--display);color:var(--text);line-height:1.5}
+.startup-actions{display:flex;flex-wrap:wrap;gap:8px}
+.startup-actions button{border:1px solid var(--stroke);background:var(--theme-soft,var(--surface2));border-radius:8px;color:var(--text);padding:10px 12px;font:700 10px var(--font);min-height:40px;flex:1}
+.startup-actions button:first-child{border-color:var(--mint);color:var(--mint)}
+.dynamic-analysis[hidden]{display:none!important}
+.dynamic-analysis{background:var(--theme-panel,var(--surface));color:var(--text)}
+.dynamic-analysis p{font-size:11px;color:var(--theme-subtext,var(--muted));line-height:1.6}
+.dynamic-analysis small{display:block;font-size:10px;color:var(--muted);line-height:1.5}
+.dynamic-breakdown{display:flex;flex-wrap:wrap;gap:7px}
+.dynamic-breakdown span{display:inline-flex;gap:6px;align-items:center;background:var(--theme-soft,var(--surface2));padding:8px;border-radius:6px;font-size:10px;color:var(--text);border:1px solid var(--stroke)}
+.dynamic-breakdown b{color:var(--mint);font-size:9px}
+@media(max-width:580px){.startup-actions{flex-direction:column}.dynamic-breakdown span{flex:1 1 40%}}
